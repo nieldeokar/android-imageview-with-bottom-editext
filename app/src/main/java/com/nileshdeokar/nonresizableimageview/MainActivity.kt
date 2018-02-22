@@ -31,9 +31,9 @@ class MainActivity : AppCompatActivity() , KeyboardHeightProvider.KeyboardHeight
             mActionBar.title = getString(R.string.app_name)
         }
 
-//        keyboardHeightProvider = KeyboardHeightProvider(this)
-//        bottomEditor.post { initialY = bottomEditor.y; initialheightOfEditText = edit_message.height }
-//        parentActivityView.post { keyboardHeightProvider?.start() }
+        keyboardHeightProvider = KeyboardHeightProvider(this)
+        bottomEditor.post { initialY = bottomEditor.y; initialheightOfEditText = edit_message.height }
+        parentActivityView.post { keyboardHeightProvider?.start() }
     }
 
 
@@ -71,16 +71,16 @@ class MainActivity : AppCompatActivity() , KeyboardHeightProvider.KeyboardHeight
 
     public override fun onPause() {
         super.onPause()
-//        keyboardHeightProvider?.setKeyboardHeightObserver(null)
+        keyboardHeightProvider?.setKeyboardHeightObserver(null)
     }
 
     public override fun onResume() {
         super.onResume()
-//        keyboardHeightProvider?.setKeyboardHeightObserver(this)
+        keyboardHeightProvider?.setKeyboardHeightObserver(this)
     }
 
     public override fun onDestroy() {
         super.onDestroy()
-//        keyboardHeightProvider?.close()
+        keyboardHeightProvider?.close()
     }
 }
