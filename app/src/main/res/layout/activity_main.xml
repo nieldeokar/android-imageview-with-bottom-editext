@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentActivityView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:backgroundTintMode="screen"
+    tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cheese_5"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black66Trans"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_4dp"
+            android:layout_toStartOf="@+id/btn_send"
+            android:background="@drawable/round_button_bg"
+            android:ems="10"
+            android:hint="@string/hint_load_img"
+            android:imeOptions="flagNoExtractUi|actionSend"
+            android:inputType="textMultiLine|textCapSentences|textShortMessage"
+            android:maxLength="100"
+            android:maxLines="3"
+            android:minHeight="48dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/padding_8dp"
+            android:paddingRight="@dimen/padding_8dp"
+            android:paddingStart="@dimen/padding_8dp"
+            android:paddingTop="12dp"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:textColor="@color/black60"
+            android:textColorHint="@color/grey500"
+
+            >
+
+            <requestFocus />
+        </EditText>
+
+
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/edit_message"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/padding_4dp"
+            android:layout_marginRight="@dimen/padding_4dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_send_24dp"
+            tools:ignore="ContentDescription" />
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/black35Trans"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:subtitleTextColor="@android:color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white"
+        />
+
+
+</RelativeLayout>

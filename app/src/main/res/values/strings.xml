@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NonResizableImageView</string>
+
+    <string name="hint_load_img">Enter image url here</string>
+</resources>
