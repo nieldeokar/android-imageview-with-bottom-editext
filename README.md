@@ -1,5 +1,9 @@
-# NonResiableImageViewAndroid
+# Android-imageview-with-bottom-editext
 Demo app on how to handle `windowSoftInputMode` when you have resizing views in your app. If you are not clear after reading this simply have a look at the gif's below you would understand the problem statement. :P
+
+### Related stackoverflow questions :
+* https://stackoverflow.com/q/21201569/3746306
+* https://stackoverflow.com/q/20264268/3746306
 
 
 
@@ -7,6 +11,7 @@ Demo app on how to handle `windowSoftInputMode` when you have resizing views in 
 * Specify windowSoftInputMode as `adjustNothing|stateHidden` : This will not resize our view
 * Handle the EditText positioning on keyboard open to do so add [KeyboardHeightProvider][1]
 * On keyboard open reposition the bottom EditText to above the Keyboard.
+
 
 
 
