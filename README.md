@@ -43,7 +43,7 @@ Samsung S8 Resizable             |  Samsung S8 non resizable
 #### Libraries used
 * AppCompat
 * [Glide][2]
-* [KeyboardHeightProvider] [1]
+* [KeyboardHeightProvider][1]
 
 
 
