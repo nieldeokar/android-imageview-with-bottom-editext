@@ -37,8 +37,12 @@ class MainActivity : AppCompatActivity() , KeyboardHeightProvider.KeyboardHeight
         }
 
         keyboardHeightProvider = KeyboardHeightProvider(this)
-        bottomEditor.post { initialY = bottomEditor.y; initialheightOfEditText = edit_url.height }
-        parentActivityView.post { keyboardHeightProvider?.start() }
+        bottomEditor.post {
+            initialY = bottomEditor.y; initialheightOfEditText = edit_url.height
+            parentActivityView.post {
+                keyboardHeightProvider?.start()
+            }
+        }
 
         btn_send.setOnClickListener({ loadImage() })
 
