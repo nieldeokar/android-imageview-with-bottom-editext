@@ -18,9 +18,9 @@ Demo app on how to handle `windowSoftInputMode` when you have resizing views in 
 
 
 
-Normal phone Resizable             |  Normal phone non resizable
+Normal phone Resizable ImageView   |  Normal phone non resizable ImageView
 :---------------------------------:|:--------------------------------:
-![Normal phone Resizable ](https://github.com/nieldeokar/NonResizableImageViewAndroid/blob/master/demo/normal-phone-not-fixed.gif?raw=true)  |  ![Normal phone non Resizable ](https://github.com/nieldeokar/NonResizableImageViewAndroid/blob/master/demo/normal-phone-fixed.gif?raw=true)
+![Normal phone Resizable ImageView ](https://github.com/nieldeokar/NonResizableImageViewAndroid/blob/master/demo/normal-phone-not-fixed.gif?raw=true)  |  ![Normal phone non Resizable ImageView](https://github.com/nieldeokar/NonResizableImageViewAndroid/blob/master/demo/normal-phone-fixed.gif?raw=true)
 
 
 ### It works with phones having 18:9 ratio
@@ -30,9 +30,9 @@ Normal phone Resizable             |  Normal phone non resizable
 
 
 
-Samsung S8 Resizable             |  Samsung S8 non resizable
+Samsung S8 Resizable ImageView     |  Samsung S8 non resizable ImageView
 :---------------------------------:|:--------------------------------:
-![Samsung S8 Resizable ](https://github.com/nieldeokar/NonResizableImageViewAndroid/blob/master/demo/samsung-s8-not-fixed.gif?raw=true)  |  ![Samsung S8 non Resizable ](https://github.com/nieldeokar/NonResizableImageViewAndroid/blob/master/demo/samsung-s8-fixed-gif.gif?raw=true)
+![Samsung S8 Resizable ImageView ](https://github.com/nieldeokar/NonResizableImageViewAndroid/blob/master/demo/samsung-s8-not-fixed.gif?raw=true)  |  ![Samsung S8 non Resizable ImageView ](https://github.com/nieldeokar/NonResizableImageViewAndroid/blob/master/demo/samsung-s8-fixed-gif.gif?raw=true)
 
 
 
